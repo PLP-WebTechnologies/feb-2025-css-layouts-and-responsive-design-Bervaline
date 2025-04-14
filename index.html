@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(226, 240, 225);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        nav{
+        
+            background-color: green;
+            display:flex;
+            gap:100px;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+       }
+
+
+        nav a{
+            color:azure;
+            text-decoration: none;          
+            font-weight:bold;
+        }
+
+        .flex-container{
+            display:flex;
+           gap:30px;
+           align-items: center;
+           justify-content: center;
+           
+           
+        }
+
+        .flex-item1, .flex-item2,.flex-item3, .flex-item4{
+            
+            background-color: #ffffff;
+            width: 200px;
+            height:310px;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: block;
+            justify-content: center;
+
+               }
+
+        
+              
+        img{
+            width: 80%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        h2{
+           text-align: center;
+        }
+
+        footer{
+            height: auto;
+            width:100%;
+            color:white;
+            background-color: rgb(48, 48, 48);
+            text-align: center;
+          
+        }
+        main {
+            flex: 1;
+            padding: 2rem;
+       }
+
+        
+@media (max-width:400px){
+     nav a{
+        flex-direction: column;
+        align-items: center;
+        display:none;
+    }
+
+    .hamburger{
+        display:block;
+    }
+  .flex-container{
+    flex-direction: column;
+        align-items: center;
+    }
+  
+    .flex-item1, .flex-item2,.flex-item3, .flex-item4{
+    width:70%;
+    height:auto;
+    margin:auto;
+}
+}
+
+@media (min-width:401px) and (max-width:768px){
+
+    nav{
+        
+        background-color: green;
+        display:flex;
+       
+       
+       width:100%;
+    }
+    nav a{
+            color:azure;
+            text-decoration: none;          
+            font-weight:800;
+        }
+
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.flex-item1, .flex-item2,.flex-item3, .flex-item4{
+    width:70%;
+    height:auto;
+    margin:auto;
+}
+.hamburger{
+    display:block;
+}
+}
+
+@media(max-width:769px) and (max-width:1200px)
+{
+    nav{
+        
+        background-color: green;
+        display:flex;
+        gap:100px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }   
+
+    nav a{
+            color:azure;
+            text-decoration: none;          
+            font-weight:bold;
+        }
+
+        .flex-container{
+            display:flex;
+           gap:30px;
+           align-items: center;
+           justify-content: center;
+           
+           
+        }
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="Home">Home</a>
+        <a href="Products">Products</a>
+        <a href="Services">Services</a>
+        <a href="Contact">Contact Us</a>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+  </header>  
+  <main>
+
+    <h2>Products</h2>
+    <div class="flex-container">
+        <div class="flex-item1">
+             <h4>Tractor</h4>
+             <img src="https://images.pexels.com/photos/162371/tractor-round-baler-custom-work-hay-162371.jpeg?auto=compress&cs=tinysrgb&w=600">
+             <p>High-powered tractor for heavy-duty tasks.</p>
+             <h6>Price: $50/day</h6>
+
+        </div>
+        <div class="flex-item2">
+            <h4>Sprayer</h4>
+            <img src="https://images.pexels.com/photos/17903068/pexels-photo-17903068/free-photo-of-man-spraying-plants-in-a-vegetable-garden-using-a-sprayer.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <p>Wide-coverage sprayer suitable for large fields. </p>
+            <h6>Price: $20/day</h6>
+        </div>
+       
+        <div class="flex-item3">
+            <h4>Harvester</h4>
+            <img src="https://images.pexels.com/photos/17846519/pexels-photo-17846519/free-photo-of-apple-picker-tool-on-a-crate-of-apples.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <p>Modern harvester with advanced features. </p>
+            <h6>Price: $100/day</h6>
+        </div>
+        <div class="flex-item4">
+            <h4>Seeder</h4>
+            <img src="https://images.pexels.com/photos/16407472/pexels-photo-16407472/free-photo-of-john-deere-hoe-seed-drill-an-agricultural-planting-machine.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <p>Precision seeder ensuring even seed distribution. </p>
+            <h6>Price: $30/day</h6>
+        </div>
+    </div>
+  </main>
+
+  
+  <footer>
+    @Beverly. All rights reserved.
+  </footer>
+</body>
+</html>
+
